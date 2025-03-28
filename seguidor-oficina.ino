@@ -109,11 +109,11 @@ void loop() {
   // Serial.print(leituraDosSensores[4]);
   // Serial.println("");
 
-  // if (identificarLinha()) {
-  //   Serial.println("identificou linha");
-  //   seguirLinha(calcularErro());
-  // } else {
-  //   controlarMotores(0, 0);
-  //   Serial.println("sem linha");
-  // }
+   if (identificarLinha()) {
+     Serial.println("identificou linha");
+     seguirLinha(calcularErro());
+   } else {
+     controlarMotores(0, 0);
+     Serial.println("sem linha");
+   }
 }
